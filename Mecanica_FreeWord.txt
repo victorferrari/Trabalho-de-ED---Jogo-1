@@ -1,0 +1,16 @@
+=================
+Mecânica FreeWord
+=================
+
+TAD: 8 Pilhas encadeadas máx(10 letras)
+Letras: Char e Bool(Cor)
+6 Palavras chave: máx(7 letras)
+
+Regras:
+	Qualquer letra pode ser empilhada independente da cor que
+		estiver no topo da pilha.
+	Vence quando formar as 6 palavras e cada palavra tiver uma
+		única cor.
+
+Cronômetro
+Número de jogadas
