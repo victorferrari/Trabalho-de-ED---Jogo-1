@@ -20,14 +20,16 @@ class Game
 		//Desenha todo o jogo
 		//Deve chamar o Draw das outras classes
 		void Draw();
-		void DrawPilha();
+		void DrawPilha(const Pilha&);
 		void DrawNode();
 	private:
 		Pilha pilhas[6];
 		
 		
-		int posicao_pilha[6][2]; // (x,y)
-		int distancia_cards;
+		const int posicao_pilha[7] = { height/3, width/8, width/4, 3*width/8, 5*width/8, 2*width/3, 7*width/8 } // x de cada, y de todas
+		
+		const int distancia_card = 30;
+		const int tamanho_card = 20;
 	
 		//Posicao de cada card (refresh antes do draw?)
 		

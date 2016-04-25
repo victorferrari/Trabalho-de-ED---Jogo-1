@@ -11,15 +11,18 @@ void Game::Draw() {
 	
 }
 
-void Game::DrawPilha() {
-	
+void Game::DrawPilha(const Pilha &p) {
+	/*al_rectangle();
+	al_flip_display();*/
 }
 
 void Game::DrawNode(/*posicao*/) {
-	/*if(!P->Cheia()) {
-		Draw node na posicao
-		GetLetra e cor?
-	}
-	*/
+	
+	//al_draw_rectangle()
+	
+	/*if(P->Cheia()) {
+		
+	}*/
+	
 }
 
