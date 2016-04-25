@@ -1,12 +1,11 @@
 #include <iostream>
-#include <pilha.h>
+#include "pilha.h"
 
 #define tam = 10
 
-int Pilha::elementos = 0;
-
 Pilha::Pilha(){
-	Topo->Next = NULL;	
+	Topo->Next = NULL;
+	elementos = 0;
 }
 
 bool Pilha::Vazia(){
@@ -43,7 +42,7 @@ bool Pilha::Empilha(char x){
 	}
 }
 
-bool Pilha::Desempilha(char *x){
+bool Pilha::Desempilha(char &x){
 	if(Vazia()){
 		return false;
 	} else if(elementos == 1){
@@ -61,5 +60,5 @@ bool Pilha::Desempilha(char *x){
 			elementos--;
 			return true;
 		}
-	}
 }
+

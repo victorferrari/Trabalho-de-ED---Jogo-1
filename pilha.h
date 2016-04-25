@@ -1,6 +1,8 @@
 #include <iostream>
-#include <node.h>
+#include "node.h"
 
+#ifndef PILHA_H
+#define PILHA_H
 
 class Pilha{
 	
@@ -9,10 +11,10 @@ class Pilha{
 		bool Vazia();
 		bool Cheia();
 		bool Empilha(char x);
-		bool Desempilha(char *x);
+		bool Desempilha(char &x);
 		
 	private:
-		NodePtr Topo;
+		Node* Topo;
 		int elementos;	
 };
 
